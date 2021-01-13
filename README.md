@@ -28,6 +28,11 @@
 
 ---
 
+### **3. Set Character Joint**
+
+- `Axis`: 회전축(Pivot 기준으로 조절, Move Gizmo 이용)
+- `Swing Axis`: Joint가 회전하게 될 두 번째 축(= 굽혀지는 축)
+
 ---
 
 ### **Moving the Character**
