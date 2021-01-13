@@ -2,9 +2,10 @@
 
 ## Settings
 
-### Create Ragdoll
+### **1. Create Ragdoll**
 
 - Creates Ragdoll: `GameObject` - `3D Object` - `Ragdoll...`
+  - Unity 자체 Ragdoll로 생성
 
 |              Create ragdoll               |                        Create ragdoll settings                         |
 | :---------------------------------------: | :--------------------------------------------------------------------: |
@@ -12,9 +13,10 @@
 
 ---
 
-### Collider Settings
+### **2. Collider Settings**
 
-- Collider 크기를 조절
+- Set collider size
+  - Ragdoll의 collider의 크기를 몸 크기와 맞도록 조절한다.
 
 |                             set hips                              |                              set spine2                               |                             set head                              |
 | :---------------------------------------------------------------: | :-------------------------------------------------------------------: | :---------------------------------------------------------------: |
