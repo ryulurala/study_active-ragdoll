@@ -9,9 +9,9 @@
   - Unity 자체 Ragdoll로 생성
   - 'Total Mass' : 몸무게?(질량) 설정
 
-    |              Create ragdoll               |                        Create ragdoll settings                         |
-    | :---------------------------------------: | :--------------------------------------------------------------------: |
-    | `GameObject` - `3D Object` - `Ragdoll...` | ![create](uploads/create_ragdoll_settings/create_ragdoll_settings.png) |
+    |              Create ragdoll               |                 Create ragdoll settings                 |
+    | :---------------------------------------: | :-----------------------------------------------------: |
+    | `GameObject` - `3D Object` - `Ragdoll...` | ![create](uploads/create_ragdoll_settings/settings.png) |
 
 ---
 
@@ -20,10 +20,10 @@
 - Set collider size  
   : Ragdoll의 collider의 크기를 몸 크기와 맞도록 조절한다.
 
-|                   set hips(ex. 1)                   |                    set spine2(ex. 2)                    |                   set head(ex. 3)                   |
-| :-------------------------------------------------: | :-----------------------------------------------------: | :-------------------------------------------------: |
-| ![set_hips_1](uploads/collider_settings/hips_1.png) | ![set_spine2_1](uploads/collider_settings/spine2_1.png) | ![set_head_1](uploads/collider_settings/head_1.png) |
-| ![set_hips_2](uploads/collider_settings/hips_2.png) | ![set_spine2_2](uploads/collider_settings/spine2_2.png) | ![set_head_2](uploads/collider_settings/head_2.png) |
+|                  set `hips`(ex. 1)                  |                   set `spine2`(ex. 2)                   |                  set `head`(ex. 3)                  | set the other body parts(ex. 4, 5, ...) |
+| :-------------------------------------------------: | :-----------------------------------------------------: | :-------------------------------------------------: | :-------------------------------------: |
+| ![set_hips_1](uploads/collider_settings/hips_1.png) | ![set_spine2_1](uploads/collider_settings/spine2_1.png) | ![set_head_1](uploads/collider_settings/head_1.png) |                   ...                   |
+| ![set_hips_2](uploads/collider_settings/hips_2.png) | ![set_spine2_2](uploads/collider_settings/spine2_2.png) | ![set_head_2](uploads/collider_settings/head_2.png) |                   ...                   |
 
 |                     before                      |                     after                     |                     result                      |
 | :---------------------------------------------: | :-------------------------------------------: | :---------------------------------------------: |
@@ -47,7 +47,7 @@
 
 #### Without Animator
 
-- playerSpeed에 따라서 움직이는 거리가 다르다.
+- `playerSpeed`에 따라서 움직이는 거리가 다르다.
 
 ```C#
 private void move()
@@ -91,9 +91,9 @@ private void move()
 
 #### With Animator
 
-- Walk, Run animation은 In Place Animation을 사용
-- moveSpeed에 따라서 움직이는 거리가 다름.  
-  Why. In Place Animation을 사용했기 때문에
+- Walk, Run animation은 **In Place Animation**을 사용
+- `moveSpeed`에 따라서 움직이는 거리가 다름.  
+  Why. **In Place Animation**을 사용했기 때문에
 
 ```C#
 private void move()
@@ -146,6 +146,8 @@ private void move()
     transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
 }
 ```
+
+- 결과
 
 |          `↑`, `↓`, `→`, `←`, `↗`, `↙`, `↖`, `↘` + `E Key`(Run)          |
 | :---------------------------------------------------------------------: |
