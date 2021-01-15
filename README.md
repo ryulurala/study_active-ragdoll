@@ -9,9 +9,9 @@
   - Unity 자체 Ragdoll로 생성
   - 'Total Mass' : 몸무게?(질량) 설정
 
-    |              Create ragdoll               |                 Create ragdoll settings                 |
-    | :---------------------------------------: | :-----------------------------------------------------: |
-    | `GameObject` - `3D Object` - `Ragdoll...` | ![create](uploads/create_ragdoll_settings/settings.png) |
+|              Create ragdoll               |                 Create ragdoll settings                 |
+| :---------------------------------------: | :-----------------------------------------------------: |
+| `GameObject` - `3D Object` - `Ragdoll...` | ![create](uploads/create_ragdoll_settings/settings.png) |
 
 ---
 
@@ -22,8 +22,8 @@
 
 |                  set `hips`(ex. 1)                  |                   set `spine2`(ex. 2)                   |                  set `head`(ex. 3)                  | set the other body parts(ex. 4, 5, ...) |
 | :-------------------------------------------------: | :-----------------------------------------------------: | :-------------------------------------------------: | :-------------------------------------: |
-| ![set_hips_1](uploads/collider_settings/hips_1.png) | ![set_spine2_1](uploads/collider_settings/spine2_1.png) | ![set_head_1](uploads/collider_settings/head_1.png) |                   ...                   |
-| ![set_hips_2](uploads/collider_settings/hips_2.png) | ![set_spine2_2](uploads/collider_settings/spine2_2.png) | ![set_head_2](uploads/collider_settings/head_2.png) |                   ...                   |
+| ![set_hips_1](uploads/collider_settings/hips_1.png) | ![set_spine2_1](uploads/collider_settings/spine2_1.png) | ![set_head_1](uploads/collider_settings/head_1.png) |        Body parts that don't fit        |
+| ![set_hips_2](uploads/collider_settings/hips_2.png) | ![set_spine2_2](uploads/collider_settings/spine2_2.png) | ![set_head_2](uploads/collider_settings/head_2.png) |           ex) Legs, Arms, ...           |
 
 |                     before                      |                     after                     |                     result                      |
 | :---------------------------------------------: | :-------------------------------------------: | :---------------------------------------------: |
@@ -149,8 +149,8 @@ private void move()
 
 - 결과
 
-|          `↑`, `↓`, `→`, `←`, `↗`, `↙`, `↖`, `↘` + `E Key`(Run)          |
-| :---------------------------------------------------------------------: |
-| ![moving_the_character](uploads/moving_the_character/with_animator.gif) |
+|                        Animator                        |          `↑`, `↓`, `→`, `←`, `↗`, `↙`, `↖`, `↘` + `E Key`(Run)          |
+| :----------------------------------------------------: | :---------------------------------------------------------------------: |
+| ![animator](uploads/moving_the_character/animator.png) | ![moving_the_character](uploads/moving_the_character/with_animator.gif) |
 
 ---
